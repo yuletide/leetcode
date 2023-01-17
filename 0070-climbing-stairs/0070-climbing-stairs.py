@@ -2,6 +2,7 @@ from functools import cache;
 class Solution:
     @cache
     def climbStairs(self, n: int) -> int:
+        # Recursive solution:
         # if n==1:
         #     return 1
         # elif n==2:
