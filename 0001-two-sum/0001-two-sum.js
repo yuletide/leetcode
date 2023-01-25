@@ -4,7 +4,7 @@
  * @return {number[]}
  */
 
-// Faster O(n) Solution
+// Faster O(n) Solution, uses more storage
 var twoSum = function(nums, target) {
   let hash = new Map();
   for (const [i, num] of nums.entries()){
@@ -19,6 +19,7 @@ var twoSum = function(nums, target) {
 };
 
 // First attempt, slower solution because of indexOf making it closer to O(n2)
+// But uses less memory
 // var twoSum = function(nums, target) {
 //   let solution = []
 //   for (const [i, num] of nums.entries()){
