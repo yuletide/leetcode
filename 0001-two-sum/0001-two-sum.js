@@ -16,7 +16,7 @@ var twoSum = function(nums, target) {
       }
     hash.set(num, i);
   }
-};
+}; 
 
 // First attempt, slower solution because of indexOf making it closer to O(n2)
 // But uses less memory
