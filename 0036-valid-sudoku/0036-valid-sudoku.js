@@ -20,22 +20,22 @@ var isValidSudoku = function(board) {
     const se = {};
     
     for (let i = 0; i<board.length; i++){
-        console.log("row",i);
+        // console.log("row",i);
         for (let j = 0; j<board[0].length; j++){
-            console.log("column", j)
+            // console.log("column", j)
             const cell = board[i][j];
             if (cell === ".") continue;
-            console.log(cell);
+            // console.log(cell);
             // check if is in row or col
             if (rows[i][cell]) {
-                console.log("found in rows", rows[i][cell]);
+                // console.log("found in rows", rows[i][cell]);
                 return false
             } else {
                 rows[i][cell] = true;
             }
             
             if (cols[j][cell]) {
-                console.log("found in col", cols[j][cell]);
+                // console.log("found in col", cols[j][cell]);
                 return false
             } else {
                 cols[j][cell] = true;
