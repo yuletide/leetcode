@@ -10,7 +10,7 @@ var threeSum = function(nums) {
         return [];
     }
     nums.sort((a,b)=>a-b);
-    console.log(nums)
+    //console.log(nums)
     for (const [i, n] of nums.entries()){
         // first item
         //console.log("anchoring", n);
