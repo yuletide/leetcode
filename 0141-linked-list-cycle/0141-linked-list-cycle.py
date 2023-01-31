@@ -7,6 +7,7 @@
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         visited = []
+
         index = 0
         current = head
 
