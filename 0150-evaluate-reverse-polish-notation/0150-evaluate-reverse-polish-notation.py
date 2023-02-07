@@ -25,7 +25,7 @@ class Solution:
                 # print("operating", token)
                 operand1 = int(stack.pop())
                 operand2 = int(stack.pop())
-                string = f"{operand2}{token}{operand1}"
+                
                 if token == '+':
                     result = operand2 + operand1
                 elif token == '-':
@@ -34,6 +34,7 @@ class Solution:
                     result = operand2 * operand1
                 elif token == '/':
                     result = operand2 / operand1
+                #string = f"{operand2}{token}{operand1}"
                 # print(string)
                 # this is hella slow cause we doing all the python
                 # result = int(eval(string))
