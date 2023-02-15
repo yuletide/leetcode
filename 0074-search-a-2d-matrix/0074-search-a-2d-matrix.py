@@ -55,37 +55,3 @@ class Solution:
             elif target < matrix[middle][0]:
                 # print("target is smaller, search north")
                 r = middle - 1
-
-            # find the row first vertically
-
-
-        # height = len(matrix)
-        # width = len(matrix[0])
-
-        # row = int(height/2)
-        # searching = True
-        # return self.searchVertical(matrix, target)
-
-    
-    # def searchVertical(self, matrix, target) -> bool:
-    #     height = len(matrix)
-    #     middle = int(height/2)
-    #     print("search vertical", middle)
-    #     if matrix[middle][0] == target:
-    #         print("value found")
-    #         return True
-    #     elif matrix[middle][0] < target:
-    #         print("row header less than")
-    #     else:
-    #         print("row header great than")
-
-        
-
-        
-    #     # check middle row first
-    #     # if (int(matrix[height/2]))
-
-        
-    # def searchRow(self, matrix, target, n) -> bool:
-    #     pass
-    #     # find a value within a row
