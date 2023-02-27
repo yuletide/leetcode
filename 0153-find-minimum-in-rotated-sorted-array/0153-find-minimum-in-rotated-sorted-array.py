@@ -12,9 +12,9 @@ class Solution:
         # if ascending, then we can return first element
         if nums[0] < nums[-1]:
             return nums[0]
-        i = 0 
-        while l<r and i<5001:
-            i += 1 # mystery infinite loop. valid solution with this
+        # i = 0 
+        while l<r:
+            # i += 1 # mystery infinite loop. valid solution with this
             # search until we find the point of dissension
             # check middle element
             mid = l+(r-l)//2
@@ -26,14 +26,11 @@ class Solution:
             #     return nums[mid]
             # elif nums[mid]
 
-            if nums[mid] < nums[l]:
-                # print("left half solution")
-                # rotations < n/2, so our start point is in the first half
-                # update right pointer to mid, and continue
-                r = mid
-            elif nums[mid] > nums[r]:
+            if nums[mid] > nums[r]:
                 # print("right half solution")
                 l = mid + 1
+            else:
+                r = mid
             # else:
                 # print(nums, "we are not running either branch")
                 # print(nums[mid])
